@@ -10,7 +10,7 @@ class Transfer
    sender.valid? && receiver.valid?
  end
  def execute_transaction
-   
+   if valid? && sender.
    
  end
 end
