@@ -13,6 +13,6 @@ class Transfer
    if valid? && sender.balance > 0 && @status=="open"
      sender.balance-=amount
      receiver.balance+=amount
-   
+  end
  end
 end
