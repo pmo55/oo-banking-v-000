@@ -13,6 +13,9 @@ def display_balance
   "Your balance is $#{@balance}."
 end
 def valid_move?
-  
+  if @status=="open" && @balace > 0
+    return true
+  else return false 
+end
 end
 end
