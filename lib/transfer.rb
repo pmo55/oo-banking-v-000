@@ -10,7 +10,8 @@ class Transfer
    sender.valid? && receiver.valid?
  end
  def execute_transaction
-   if valid? && sender.
+   if valid? && sender.balance > 0 && @status=="open"
+     sender.amount-=
    
  end
 end
