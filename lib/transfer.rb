@@ -12,7 +12,7 @@ class Transfer
  def execute_transaction
    if valid? && sender.balance > 0 && @status=="open"
      sender.balance-=amount
-     receiver.balance+=
+     receiver.balance+=amount
      self.status="complete"
   end
  end
